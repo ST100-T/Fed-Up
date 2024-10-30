@@ -188,7 +188,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        
+        requireActivity().setTheme(R.style.SettingsTheme)
         val view = super.onCreateView(inflater, container, savedInstanceState)
         view?.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.grey))
         return view
